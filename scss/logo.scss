@@ -1,0 +1,76 @@
+.logo{
+	position: relative;
+	width: 105.69px;
+	height: 40px;
+	&-pict{
+		position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        &-circle{
+        	width: 36px;
+            height: 36px;;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            background: #FFF;
+        }
+        &-left{
+        	position: absolute;
+        	width: 11.76px;
+        	height: 11.76px;
+        	border-radius: 23.52px;
+        	top: 14.29px;
+        	left: 8.41px;
+        	&-white{
+        		background: #FFF;
+        		top: 2px;
+        		left: -2px;
+        		border-radius: 0 22.52px 0 0;
+        	}
+        }
+        &-right{
+        	position: absolute;
+        	width: 11.76px;
+        	height: 11.76px;
+        	border-radius: 23.52px;
+        	top: 14.29px;
+        	right: 8.41px;
+        	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        	&-white{
+        		top: 2px;
+                left: 2px;
+                border-radius: 22.53px 0 0 0;
+                background: #FFF;
+        	}
+        }
+        &-cont1{
+        	position: relative;
+            width: 11.76px;
+            height: 5.85px;
+            top: 5.91px;
+            background: #FFF;
+        }
+        &-cont2{
+        	position: absolute;
+            width: 2.64px;
+            height: 5.91px;
+            right: 8.5px;
+            background: #FFF;
+        }
+	}
+}
+.container{
+	position: absolute;
+	display: flex;
+	height: 40px;
+	width: 105.69px;
+}
+.toxin{
+	margin: auto;
+	text-align: right;
+}
