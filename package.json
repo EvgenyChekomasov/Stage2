@@ -1,0 +1,26 @@
+{
+  "name": "stage2",
+  "version": "1.0.0",
+  "description": "Task 2 by education from MetaLamp",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel html/index.pug --open",
+    "build": "parcel build html/index.pug -d docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgenyChekomasov/Stage2.git"
+  },
+  "keywords": [],
+  "author": "EvgenyChekomasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvgenyChekomasov/Stage2/issues"
+  },
+  "homepage": "https://github.com/EvgenyChekomasov/Stage2#readme"
+}

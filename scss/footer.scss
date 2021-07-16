@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Montserrat;
+	src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+	src: url('../fonts/Montserrat/Montserrat-Regular.woff');
+	src: url('../fonts/Montserrat/Montserrat-Regular.svg');
+}
+.copyright{
+	display: flex;
+	height: 70px;
+	background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &-text{
+    	font-family: Montserrat;
+    	font-size: 14px;
+  		line-height: 17px;
+  		color: rgba(31, 32, 65, 0.75);
+  		position: relative;
+  		margin: auto;
+  		margin-left: 140px;
+    }
+}
