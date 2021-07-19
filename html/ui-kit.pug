@@ -13,21 +13,40 @@ html
 				.main-footer-navigation
 					h3.subheader3
 						| навигация
+						ul.footer-menu
+							li.footer-menu-elem-first: a.footer-link(href="http://my-link.rr") О нас
+							li.footer-menu-elem: a.footer-link(href="http://my-link.rr") Новости
+							li.footer-menu-elem: a.footer-link(href="http://my-link.rr") Служба поддержки
+							li: a.footer-link(href="http://my-link.rr") Услуги
 				.main-footer-about
 					h3.subheader3
 						| о нас
+						ul.footer-menu
+							li.footer-menu-elem-first: a.footer-link(href="http://my-link.rr") О сервисе
+							li.footer-menu-elem: a.footer-link(href="http://my-link.rr") Наша команда
+							li.footer-menu-elem: a.footer-link(href="http://my-link.rr") Вакансии
+							li: a.footer-link(href="http://my-link.rr") Инвесторы
 				.main-footer-support
 					h3.subheader3
 						| служба поддержки
+						ul.footer-menu
+							li.footer-menu-elem-first: a.footer-link(href="http://my-link.rr") Соглашения
+							li.footer-menu-elem: a.footer-link(href="http://my-link.rr") Сообщества
+							li: a.footer-link(href="http://my-link.rr") Связь с нами
 				.main-footer-subscribe
 					h3.subheader3
 						| подписка
 					p.text-content
 						| Получайте специальные предложения и новости сервиса
+					form
+						input(type="email" placeholder="Email")
 			.copyright
 				p.copyright-text
 					| Copyright © 2018 Toxin отель. Все права защищены.
-				img.copyright-sn-link(src="../image/twitter-icon.png" href="http://my-link.rr" alt="twitter")
-				img.copyright-sn-link(src="../image/fb-icon.png" href="http://my-link.rr" alt="facebook")
-				img.copyright-sn-link_right(src="../image/ig-icon.png" href="http://my-link.rr" alt="instagram")
+				a.copyright-sn-link(href="http://my-link.rr")
+					img(src="../image/twitter-icon.png" alt="twitter")
+				a.copyright-sn-link(href="http://my-link.rr")
+					img(src="../image/fb-icon.png" alt="facebook")
+				a.copyright-sn-link_right(href="http://my-link.rr")
+					img(src="../image/ig-icon.png" alt="instagram")
 
