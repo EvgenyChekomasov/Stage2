@@ -2,8 +2,97 @@ html
 	head
 		meta(charset="utf-8")
 		link(rel="stylesheet" type="text/css" href="../css/ui-kit.css")
+		script(src="../js/multiselect.js")
 		tittle UI-Kit
 	body
+		.header
+			.header-include
+				include ../modules/logo
+			.header-menu
+				a.header-link-about(href="http://my-link.rr") О нас
+				form.header-form
+					.multiselect
+						.selectBox(onclick="showCheckboxes('service')")
+							select
+								option.text-content Услуги
+							.overselect
+						#service.checkboxes
+							label(for="breakfast")
+								input(type="checkbox" id="breakfast")
+								|Завтрак
+							label(for="table")
+								input(type="checkbox" id="table")
+								|Письменный стол
+							label(for="bed")
+								input(type="checkbox" id="bed")
+								|Кроватка
+							label(for="child-chair")
+								input(type="checkbox" id="child-chair")
+								|Стул для кормления
+				a.header-link(href="http://my-link.rr") Вакансии
+				a.header-link(href="http://my-link.rr") Новости
+				form.header-form
+					.multiselect
+						.selectBox(onclick="showCheckboxes('agreements')")
+							select
+								option.text-content Соглашения
+							.overselect
+						#agreements.checkboxes
+							label(for="agreement1")
+								input(type="checkbox" id="agreement1")
+								|Соглашение 1
+							label(for="agreement2")
+								input(type="checkbox" id="agreement2")
+								|Соглашение 2
+				button.btn-white(type="submit")
+					| войти
+				button.btn-color(type="submit")
+					| зарегистрироваться
+		
+		.header2
+			.header-include
+				include ../modules/logo
+			.header-menu
+				a.header-link-about(href="http://my-link.rr") О нас
+				form.header-form
+					.multiselect
+						.selectBox(onclick="showCheckboxes('service2')")
+							select
+								option.text-content Услуги
+							.overselect
+						#service2.checkboxes
+							label(for="breakfast")
+								input(type="checkbox" id="breakfast")
+								|Завтрак
+							label(for="table")
+								input(type="checkbox" id="table")
+								|Письменный стол
+							label(for="bed")
+								input(type="checkbox" id="bed")
+								|Кроватка
+							label(for="child-chair")
+								input(type="checkbox" id="child-chair")
+								|Стул для кормления
+				a.header-link(href="http://my-link.rr") Вакансии
+				a.header-link(href="http://my-link.rr") Новости
+				form.header-form
+					.multiselect
+						.selectBox(onclick="showCheckboxes('agreements2')")
+							select
+								option.text-content Соглашения
+							.overselect
+						#agreements2.checkboxes
+							label(for="agreement1")
+								input(type="checkbox" id="agreement1")
+								|Соглашение 1
+							label(for="agreement2")
+								input(type="checkbox" id="agreement2")
+								|Соглашение 2
+				.header2-rectangle
+				.header2-user
+					p.user
+						| Юлий Цезарь
+
 		.footer
 			.main-footer
 				.main-footer-description
@@ -38,8 +127,10 @@ html
 						| подписка
 					p.text-content
 						| Получайте специальные предложения и новости сервиса
-					form
-						input(type="email" placeholder="Email")
+					form.main-footer-subscribe-form
+						input.main-footer-subscribe-input(type="email" placeholder="Email")
+						button.material-icons(type="submit")
+							|arrow_forward
 			.copyright
 				p.copyright-text
 					| Copyright © 2018 Toxin отель. Все права защищены.

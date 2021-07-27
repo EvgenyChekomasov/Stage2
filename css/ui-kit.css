@@ -2,6 +2,10 @@
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: 'Material Icons';
+  src: url("../fonts/MaterialIcons-Regular.woff") format("woff");
+}
 .subheader3 {
   font-family: Montserrat;
   font-style: normal;
@@ -19,6 +23,21 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+  margin-right: 0px;
+  border: none;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
 }
 
 .logo {
@@ -93,6 +112,137 @@
   margin-right: 0px;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.header-form {
+  margin: auto;
+}
+.header-include {
+  margin: auto;
+  margin-left: 9.72%;
+}
+.header-menu {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-right: 9.72%;
+}
+.header-link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-link-about {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.header2-rectangle {
+  height: 30px;
+  width: 1px;
+  background: rgba(31, 32, 65, 0.1);
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header2 .user {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.multiselect {
+  width: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.selectBox {
+  position: relative;
+}
+.selectBox select {
+  width: 100%;
+  font-family: Montserrat;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+.checkboxes label {
+  display: block;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.btn-white {
+  text-transform: uppercase;
+  height: 34px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(180deg, #BC9CFF 100%, #8BA4F9 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  font-style: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 15px;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn-color {
+  text-transform: uppercase;
+  height: 34px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 0px solid transparent;
+  border-radius: 22px;
+  font-style: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 15px;
+  margin: auto;
+  margin-left: 10px;
+}
+
 .footer-menu {
   list-style-type: none;
   margin-left: -40px;
@@ -127,6 +277,7 @@
 .footer .main-footer-description {
   max-width: 260px;
   padding: 1em;
+  padding-left: 0;
   margin: auto;
   margin-left: 9.72%;
   margin-top: 104px;
@@ -152,9 +303,29 @@
 .footer .main-footer-subscribe {
   max-width: 260px;
   padding: 1em;
+  padding-right: 0;
   margin: auto;
   margin-top: 104px;
   margin-right: 9.72%;
+}
+.footer .main-footer-subscribe-form {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.footer .main-footer-subscribe-input {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: auto;
+  margin-left: 15px;
+  border: none;
 }
 .footer .copyright {
   display: flex;
